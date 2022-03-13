@@ -214,7 +214,7 @@ class Transmission
   private :eval_operator
 
   def map_name(name)
-    URI.unescape(name).gsub /\+/, ' '
+    CGI.unescape(name).gsub /\+/, ' '
   end
 
   def map_status(code)
